@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     // createElement so they execute, awaiting onload for src scripts to
     // preserve ordering (React before ReactDOM before Babel before text/babel).
     const doc = new DOMParser().parseFromString(template, 'text/html');
-    document.documentElement.replaceWith(doc.documentElement);
+    document.documentElement.replaceWith(doc.documentElement); try{var _fc=document.createElement('div');_fc.style.cssText='position:fixed;inset:0;background:#F6ECDD;z-index:2147483647';document.documentElement.appendChild(_fc);var _ft=0;(function _k(){var b=document.body;var done=b&&!/\u007b\u007b/.test(b.textContent);if(done||_ft++>300){if(_fc.parentNode)_fc.remove();}else{requestAnimationFrame(_k);}})();}catch(_e){}
 
     // Resolve page-frame markers: mint this document's own blob for each
     // framed page — from local text when this is the root, otherwise by
